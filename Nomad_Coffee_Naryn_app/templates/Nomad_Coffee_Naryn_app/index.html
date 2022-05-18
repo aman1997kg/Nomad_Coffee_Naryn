@@ -1,0 +1,444 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Coffee Naryn</title>
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="{% static 'css/tooplate-wave-cafe.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!--
+Tooplate 2121 Wave Cafe
+https://www.tooplate.com/view/2121-wave-cafe
+-->
+</head>
+<body>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="header_logo">
+            <img src="{% static 'img/nomad_logo.jpg' %}" alt="logo">
+            <!--<h1 class="tm-site-name">Nomad Coffee Naryn</h1>-->
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                  <span>Меню</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>О нас</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#special" class="tm-page-link">
+                  <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                  <span>Основные меню</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>Контакты</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <!-- Drink Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="cold">Iced Coffee</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="hot">Hot Coffee</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="juice">Fruit Juice</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="juice">Fruit</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/iced-americano.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Americano<span class="tm-list-item-price">$10.25</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the first item. Wave Cafe Template is provided by Tooplate.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/iced-cappuccino.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Cappuccino<span class="tm-list-item-price">$12.50</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="% static 'img/iced-espresso.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Espresso<span class="tm-list-item-price">$14.25</span></h3>
+                    <p class="tm-list-item-description">You are not permitted to redistribute this template ZIP file on any other template websites.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/iced-latte.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Latte<span class="tm-list-item-price">$11.50</span></h3>
+                    <p class="tm-list-item-description">Contents are organized into 3 tabs. Please <a href="https://www.tooplate.com/contact" rel="nofollow" target="_parent">contact Tooplate</a> if you have anything to ask.</p>
+                  </div>
+                </div> 
+                                       
+              </div>
+            </div> 
+
+            <div id="hot" class="tm-tab-content">
+              <div class="tm-list">
+              
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/hot-americano.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Americano<span class="tm-list-item-price">$8.50</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the item along with a squared thumbnail.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/hot-cappuccino.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Cappuccino<span class="tm-list-item-price">$9.50</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items that can add more as you need. Only content area will be scrolling.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/hot-espresso.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Espresso<span class="tm-list-item-price">$7.50</span></h3>
+                    <p class="tm-list-item-description">Left side logo and main menu are fixed. The video background is fixed.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/hot-latte.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Latte<span class="tm-list-item-price">$6.50</span></h3>
+                    <p class="tm-list-item-description">Page contents are organized into 3 tabs to show different lists of items.</p>              
+                  </div>
+                </div>
+                         
+              </div>
+            </div>
+
+            <div id="juice" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/smoothie-1.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Strawberry Smoothie<span class="tm-list-item-price">$12.50</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the item along with a squared thumbnail.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/smoothie-2.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Red Berry Smoothie<span class="tm-list-item-price">$14.50</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/smoothie-3.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Pineapple Smoothie<span class="tm-list-item-price">$16.50</span></h3>
+                    <p class="tm-list-item-description">Left side logo and main menu are fixed. The video background is fixed.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="{% static 'img/smoothie-4.png' %}" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Spinach Smoothie<span class="tm-list-item-price">$18.50</span></h3>
+                    <p class="tm-list-item-description">You are not allowed to redistribute the template ZIP file on other template sites.</p>              
+                  </div>
+                </div>  
+                
+               
+
+              </div>
+            </div>
+
+            <div class="social_icon">
+              <h3>Поделиться ссылкой</h3>
+              <div class="ya-share2" data-curtain data-size="l" data-limit="6" data-services="vkontakte,facebook,telegram,twitter,whatsapp"></div>
+            </div>
+
+            <!-- end Drink Menu Page -->
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            
+
+
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">
+                    Nomad Coffee Naryn</h2>
+                    <div class="img_div"><img class="img_special" src="{% static 'img/nomad_coffee.jpg' %}" alt="Image"></div><br>
+                    <p> - Уютная кофейня в центре города Нарын</p>
+                    <p> - Кофейня "Nomad" предлагает Вам попробовать натуральный кофе</p>             
+                </div>                
+              </div>
+            </div>
+
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">
+                    Первая кофейня в Нарыне «Nomad Coffee» </h2>
+                    <div class="img_div"><img class="img_special" src="{% static 'img/author.jpg' %}" alt="Image"></div><br>
+                    
+                    <p>40-летний Арслан Казакбаев – основатель первой кофейни в городе Нарын «Nomad Coffee». 
+                      У него 2 высших образования: инженер в сфере телекоммуникации и менеджер в сфере общественного питания и туризма. Рассказывает, 
+                      что решил открыть кофейню 5 лет назад целенаправленно после маркетингового исследования. Оказывается, в Нарыне в таком заведении давно зрела потребность.
+                    </p>
+                    
+                    <p> В самом начале кафе было рассчитано на 10 мест, но со временем популярность заведения росла. Сейчас там могут поместиться уже 70 человек. «Nomad Coffee» расположен в самом центре Нарына, 
+                    рядом с ним находятся банки, госучреждения, университет Центральной Азии. Сотрудники которых сейчас являются постоянными посетителями заведения. А до пандемии ими были исключительно зарубежные туристы.
+                    </p>
+                    <p>Про кофейню клиенты узнали благодаря «сарафанному» радио. Именно заведения такого формата с уникальным предложением по разнообразию напитков и еды в городе не было. Это и помогло стать «Nomad Coffee» популярным местом. 
+                      Но вместе с узнаваемостью, рассказывает, Арслан Казакбаев, появились и первые проблемы по утеплению.                    
+                      В Нарыне летом никто не использует кондиционеры, зимы в регионе холодные, поэтому для обеспечения комфортного пребывания туристов в отелях, ресторанах и кафе необходимы теплые помещения.
+                    </p> 
+                    <p>О том, как правильно утеплять здание Арслан Казакбаев узнал на тренингах проекта ПЭРЭТО по внедрению энергоэффективных мер, прошедших для владельцев индустрии гостеприимства 24-25 сентября в Нарыне.
+
+                      Рассказывает, что заинтересовался солнечным коллектором, рекуператором воздуха, а также надежными методами утепления.
+                      
+                      «Если не обогревать кафе, моментально становится прохладно. На тренингах узнал много интересной информации, 
+                      спасибо за организацию. Я считаю, что нам надо развивать зеленые технологии, ведь мы привлекаем туристов нашей нетронутой природой, у нас чисто и много зелени, мы как бизнесмены будем делать все, чтобы сохранить нашу экологию», 
+                      - отметил Арслан Казакбаев.
+                    </p> 
+                      
+                    <div class="social_icon">
+                        <h3>Поделиться ссылкой</h3>
+                        <div class="ya-share2" data-curtain data-size="l" data-limit="6" data-services="vkontakte,facebook,telegram,twitter,whatsapp"></div>
+                      </div>
+            
+                </div>                
+              </div>
+            </div>
+
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Special Items Page -->
+
+          <div id="special" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-mb-20 tm-about-box-2">
+                {% for menu in base_menu %}
+
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">{{ menu.title_menu}}</h2>
+                  <div class="img_div"><img src="{{ menu.image_menu.url }}" alt="Image" class="img_special"></div>
+                  <p class="tm-special-item-text">{{ menu.text_menu }}</p>
+                </div><br>
+                  {% endfor %}
+
+                <script src="https://yastatic.net/share2/share.js"></script>
+                  <div class="social_icon">
+                    <h3>Поделиться ссылкой</h3>
+                    <div class="ya-share2" data-curtain data-size="l" data-limit="6" data-services="vkontakte,facebook,telegram,twitter,whatsapp"></div>
+                  </div>
+
+              </div>
+
+            </div>              
+          </div>
+          <!-- end Special Items Page -->
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+              <b>Nomad Coffee Naryn</b>
+                <br>Naryn, Kyrgyzstan
+                <br>Нарын, Нарынская область
+        
+                  <ul>
+                    <i class="fa fa-map-marker" aria-hidden="true"><a href="https://www.google.com/maps?ll=41.428434,75.999654&z=16&t=m&hl=ru&gl=KG&mapclient=embed&cid=11164757163675421456"> ул. Ленина 70-10А</a></i><br>
+                    <i class="fa fa-phone" aria-hidden="true"><b> Телефон: </b> <a href="tel:+996704580302">+996 704 58 03 02</a></i><br>
+                    <i class="fa fa-envelope" aria-hidden="true"><b> Эл. почта: </b> <a href="mailto:okazakbaev@gmail.com ">okazakbaev@gmail.com </a></i><br>
+                  </ul>
+              
+                  
+
+                  <script src="https://yastatic.net/share2/share.js"></script>
+                  <h3>Поделиться ссылкой</h3>
+                  <div class="ya-share2" data-curtain data-size="l" data-limit="6" data-services="vkontakte,facebook,telegram,twitter,whatsapp"></div>
+                <br><div>
+                  <iframe class="map_special" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1495.7545390961056!2d76.0002599!3d41.4281743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38906bda3bfe08a5%3A0x9af12f7ca85f0b10!2sNomad%20Coffee!5e0!3m2!1sru!2skg!4v1652623376434!5m2!1sru!2skg" width="500px" height="500px" tyle="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+            </div>
+
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Ф.И.О" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Сообщения" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Заказать
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer" >
+      <p class="tm-black-bg tm-footer-text">Copyright 2022 
+      
+      |<a href="#" class="tm-footer-link" rel="sponsored" target="_parent">Nomad Coffee Naryn</a></p>
+    </footer>
+  </div>
+    
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="{% static 'video/naryn_obzor.mp4' %}" type="video/mp4">
+      </video>
+  </div>
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
+</body>
+</html>
