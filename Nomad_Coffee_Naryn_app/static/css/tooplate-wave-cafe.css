@@ -220,7 +220,7 @@ h2 {
 
 /* About */
 /* .tm-about-box-1 { padding: 40px 30px 50px 0; } */
-.tm-about-box-2 { padding: 40px 0px; margin:20px}
+.tm-about-box-2 { padding: 0 0; margin:20px}
 .tm-about-header { margin-left: 220px; }
 
 /* Special */
@@ -236,7 +236,7 @@ h2 {
 }
 
 .tm-special-item-title { font-size: 1.4rem; }
-.tm-special-item-description { padding: 25px 0; }
+.tm-special-item-description { padding: 0 0; }
 
 /* Contact */
 .tm-contact-text-container {

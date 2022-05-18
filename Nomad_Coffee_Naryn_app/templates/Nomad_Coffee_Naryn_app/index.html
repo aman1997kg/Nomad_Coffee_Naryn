@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-<!--
-Tooplate 2121 Wave Cafe
-https://www.tooplate.com/view/2121-wave-cafe
--->
+
 </head>
 <body>
   <div class="tm-container">
@@ -252,7 +249,7 @@ https://www.tooplate.com/view/2121-wave-cafe
 
           <div id="special" class="tm-page-content">
             <div class="tm-special-items">
-              <div class="tm-black-bg tm-mb-20 tm-about-box-2">
+              <div class="tm-black-bg tm-about-box-2">
                 {% for menu in base_menu %}
 
                 <div class="tm-special-item-description">
@@ -287,8 +284,6 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <i class="fa fa-phone" aria-hidden="true"><b> Телефон: </b> <a href="tel:+996704580302">+996 704 58 03 02</a></i><br>
                     <i class="fa fa-envelope" aria-hidden="true"><b> Эл. почта: </b> <a href="mailto:okazakbaev@gmail.com ">okazakbaev@gmail.com </a></i><br>
                   </ul>
-              
-                  
 
                   <script src="https://yastatic.net/share2/share.js"></script>
                   <h3>Поделиться ссылкой</h3>
@@ -299,16 +294,16 @@ https://www.tooplate.com/view/2121-wave-cafe
             </div>
 
             <div class="tm-black-bg tm-contact-form-container tm-align-right">
+                 <h2>Связаться с нами</h2>
               <form action="" method="POST" id="contact-form">
-                <div class="tm-form-group">
-                  <input type="text" name="name" class="tm-form-control" placeholder="Ф.И.О" required="" />
-                </div>
-                <div class="tm-form-group">
-                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
-                </div>        
-                <div class="tm-form-group tm-mb-30">
-                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Сообщения" required=""></textarea>
-                </div>        
+                {% csrf_token %}
+
+                  <div class="tm-form-group">
+                {{ contact.as_p }}
+                  </div>
+
+
+
                 <div>
                   <button type="submit" class="tm-btn-primary tm-align-right">
                     Заказать
@@ -316,6 +311,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                 </div>
               </form>
             </div>
+
           </div>
           <!-- end Contact Page -->
         </main>
